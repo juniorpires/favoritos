@@ -1,6 +1,7 @@
 <div class="create-favorito-form">
 
     <label>categoria
+      
       <select [(ngModel)]="favorito.categoria_id">
         <option *ngFor="let c of categorias" [ngValue]="c.id" >{{c.nome}}</option>
       </select>
