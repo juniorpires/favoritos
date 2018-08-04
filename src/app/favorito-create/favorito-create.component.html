@@ -1,0 +1,20 @@
+<div class="create-favorito-form">
+
+    <label>categoria
+      <select [(ngModel)]="favorito.categoria_id">
+        <option *ngFor="let c of categorias" [ngValue]="c.id" >{{c.nome}}</option>
+      </select>
+    </label>
+
+    
+  <label>titulo:
+    <input [(ngModel)]="favorito.titulo" placeholder="titulo">
+  </label>
+
+  <label>url:
+    <input [(ngModel)]="favorito.url" placeholder="url">
+  </label>
+
+  <button (click)="save()">Novo</button>
+  
+</div>

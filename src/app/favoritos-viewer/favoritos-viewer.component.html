@@ -1,0 +1,14 @@
+
+
+<div class="categoria" *ngFor="let c of categorias">
+    <h2 class="titulo">{{c.nome}}</h2>
+    <hr class="linha">
+    <!--<hr class="linha">-->
+    <div class="favoritos">
+      <ul>
+        <li *ngFor="let f of c.favoritos">
+          <a href="{{f.url}}" target="_blank">{{f.titulo}}</a>
+        </li>
+      </ul>
+    </div>
+</div>
